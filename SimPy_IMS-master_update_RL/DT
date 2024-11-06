@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<MATERIAL 1.Intransit &le; 0.5<br/>gini = 0.464<br/>samples = 315<br/>value = [12.0, 2.0, 80.0, 2.0, 3.0, 216.0]<br/>class = [5]>, fillcolor="#f08cc6"] ;
+1 [label=<gini = 0.076<br/>samples = 51<br/>value = [0, 1, 49, 0, 0, 1]<br/>class = [2]>, fillcolor="#41e686"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+4 [label=<Remaining_Demand &le; 20.5<br/>gini = 0.321<br/>samples = 264<br/>value = [12, 1, 31, 2, 3, 215]<br/>class = [5]>, fillcolor="#ea63b2"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label=<PRODUCT.InvenLevel &le; 31.0<br/>gini = 0.436<br/>samples = 28<br/>value = [0, 0, 19, 0, 0, 9]<br/>class = [2]>, fillcolor="#97f1bd"] ;
+4 -> 5 ;
+6 [label=<gini = 0.111<br/>samples = 17<br/>value = [0, 0, 16, 0, 0, 1]<br/>class = [2]>, fillcolor="#45e789"] ;
+5 -> 6 ;
+7 [label=<gini = 0.397<br/>samples = 11<br/>value = [0, 0, 3, 0, 0, 8]<br/>class = [5]>, fillcolor="#ef83c2"] ;
+5 -> 7 ;
+8 [label=<Remaining_Demand &le; 26.5<br/>gini = 0.233<br/>samples = 236<br/>value = [12, 1, 12, 2, 3, 206]<br/>class = [5]>, fillcolor="#e854aa"] ;
+4 -> 8 ;
+9 [label=<PRODUCT.InvenLevel &le; 24.5<br/>gini = 0.32<br/>samples = 137<br/>value = [10, 1, 11, 2, 1, 112]<br/>class = [5]>, fillcolor="#ea60b0"] ;
+8 -> 9 ;
+10 [label=<gini = 0.576<br/>samples = 24<br/>value = [1, 0, 11, 1, 0, 11]<br/>class = [2]>, fillcolor="#ffffff"] ;
+9 -> 10 ;
+11 [label=<gini = 0.195<br/>samples = 113<br/>value = [9, 1, 0, 1, 1, 101]<br/>class = [5]>, fillcolor="#e850a8"] ;
+9 -> 11 ;
+18 [label=<gini = 0.098<br/>samples = 99<br/>value = [2, 0, 1, 0, 2, 94]<br/>class = [5]>, fillcolor="#e643a2"] ;
+8 -> 18 ;
+}
